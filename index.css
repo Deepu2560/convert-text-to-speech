@@ -10,11 +10,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #5256ad;
+  background: #52b788;
 }
 ::selection {
   color: #fff;
-  background: #5256ad;
+  background: #52b788;
 }
 .wrapper {
   width: 370px;
@@ -22,11 +22,13 @@ body {
   border-radius: 7px;
   background: #fff;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
+  transition: all linear 1s;
 }
 .wrapper header {
   font-size: 28px;
   font-weight: 500;
   text-align: center;
+  transition: all linear 2s;
 }
 .wrapper form {
   margin: 35px 0 20px;
@@ -49,6 +51,7 @@ form :where(textarea, select, button) {
   height: 100%;
   border: none;
   border-radius: 5px;
+  transition: all linear 2s;
 }
 form .row textarea {
   resize: none;
@@ -89,6 +92,7 @@ form .row select::-webkit-scrollbar-thumb {
   display: none;
   align-items: center;
   justify-content: center;
+  transition: all linear 1s;
 }
 
 form button,

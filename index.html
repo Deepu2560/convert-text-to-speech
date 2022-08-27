@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Convert text to speech</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
-    <p class="title">Convert Text To Speech</p>
-    <div class="text-section">
-      <p class="text-title">Enter text</p>
-      <textarea name="" id="text"></textarea>
-      <select name="" id="voice">
-        <option value="Google US English">Google US English</option>
-      </select>
+  <body onload="resetEverything()">
+    <div class="wrapper">
+      <header>Text To Speech</header>
+      <form action="#">
+        <div class="row">
+          <label>Enter Text</label>
+          <textarea></textarea>
+        </div>
+        <div class="row">
+          <label>Select Voice</label>
+          <div class="outer"><select></select></div>
+        </div>
+        <button>Convert To Speech</button>
+        <div id="reset">Reset</div>
+      </form>
     </div>
-    <button class="submit">Convert TO Speech</button>
     <script src="./index.js"></script>
   </body>
 </html>
